@@ -1,14 +1,28 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+  <section class="section">
+    <div class="container">
+      <h1 class="title">
+        Lista de tarefas
+      </h1>
+      <p class="subtitle">
+        Minha aplicação de lista de tarefas usando <strong>Vue</strong>!
+      </p>
+
+      <div id="nav">
+        <router-link to="/">Home</router-link> |
+        <router-link to="/about">About</router-link> |
+        <router-link to="/gallery">Galeria</router-link> |
+        <a href="https://github.com/lubien" target="_blank">Quem fez?</a>
+      </div>
+
+      <router-view />
     </div>
-    <router-view />
-  </div>
+  </section>
 </template>
 
 <style lang="scss">
+@import "~bulma/bulma.sass";
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
