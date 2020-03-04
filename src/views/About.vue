@@ -1,5 +1,5 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <h1>Isso so aparece se eu estiver em /about</h1>
   </div>
 </template>
