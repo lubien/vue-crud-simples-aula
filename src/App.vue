@@ -10,7 +10,7 @@
 
       <div id="nav">
         <router-link to="/">Home</router-link> |
-        <router-link to="/about">About</router-link> |
+        <router-link to="/create">Create Task</router-link> |
         <router-link to="/gallery">Galeria</router-link> |
         <a href="https://github.com/lubien" target="_blank">Quem fez?</a>
       </div>

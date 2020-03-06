@@ -11,6 +11,24 @@ const routes = [
     component: Home
   },
   {
+    path: "/tasks/:id",
+    name: "ShowTask",
+    component: () =>
+      import(/* webpackChunkName: "showTask" */ "../views/ShowTask.vue")
+  },
+  {
+    path: "/create",
+    name: "CreateTask",
+    component: () =>
+      import(/* webpackChunkName: "createTask" */ "../views/CreateTask.vue")
+  },
+  {
+    path: "/edit/:id",
+    name: "EditTask",
+    component: () =>
+      import(/* webpackChunkName: "editTask" */ "../views/EditTask.vue")
+  },
+  {
     path: "/about",
     name: "About",
     component: () =>
